@@ -5,16 +5,37 @@
 <title>form</title>
     <!--custom css-->
     <link rel="stylesheet" href="css/style.css">
- <style>   
+ <style>   @keyframes example {
+  0% {
+  color: red;}
+  
+ 
+  25% {color: green;}
+  50% {color: blue;}
+ 
+  100% {color: violet;}
+}
+
+/* The element to apply the animation to */
+.hello {
+  
+  color: red;
+  
+  text-shadow: 2px 2px 4px #111;
+
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  
+}
 body {
   margin: 0;
   font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-   background-image: url('c.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
+ }
 
-}
+            
+
+        
 
 .topnav {
   overflow: hidden;
@@ -50,7 +71,7 @@ body {
   <a href="#about">About</a>
 </div>
 
-<div style="padding-left:16px">
+<div  class="hello">
   <h2>Top Navigation Example</h2>
   <p>Some content..</p>
 </div>
